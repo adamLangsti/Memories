@@ -1,10 +1,36 @@
 import React from 'react';
+import './css/index.css';
+import logo from './images/memories.png';
+import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
+import Posts from './components/posts/Posts';
+import Form from './components/form/Form';
 
 const App = () => {
     return (
-        <div className='App'>
-            <h1>Hello World</h1>
-        </div>
+        <Container maxWidth='lg'>
+            <AppBar position='static' color='inherit'>
+                <Typography variant='h2' align='center'>
+                    Memories
+                </Typography>
+                <img src={logo} alt='memories' />
+            </AppBar>
+            <Grow in>
+                <Container>
+                    <Grid
+                        container
+                        justify='space-between'
+                        align-items='stretch'
+                        spacing={3}>
+                        <Grid item xs={12} sm={7}>
+                            <Posts />
+                        </Grid>
+                        <Grid item xs={12} sm={4}>
+                            <Form />
+                        </Grid>
+                    </Grid>
+                </Container>
+            </Grow>
+        </Container>
     );
 };
 

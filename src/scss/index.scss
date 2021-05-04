@@ -1,0 +1,10 @@
+@import 'colors';
+@import 'form';
+@import 'posts';
+
+body {
+  background-color: $secondary-color;
+}
+img {
+  height: 60px;
+}
