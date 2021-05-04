@@ -20,7 +20,12 @@ const App = () => {
                     align='center'>
                     Memories
                 </Typography>
-                <img src={logo} className={classes.image} alt='memories' />
+                <img
+                    src={logo}
+                    className={classes.image}
+                    alt='memories'
+                    height='60'
+                />
             </AppBar>
             <Grow in>
                 <Container>

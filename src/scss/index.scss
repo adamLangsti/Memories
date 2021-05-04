@@ -5,6 +5,10 @@
 body {
   background-color: $secondary-color;
 }
-img {
-  height: 400px;
+
+h1 {
+  font-family: Helvetica, sans-serif;
+}
+::selection {
+  background-color: $primary-color;
 }

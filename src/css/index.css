@@ -2,6 +2,10 @@ body {
   background-color: #c9c9c9;
 }
 
-img {
-  height: 400px;
+h1 {
+  font-family: Helvetica, sans-serif;
+}
+
+::selection {
+  background-color: #292929;
 }
